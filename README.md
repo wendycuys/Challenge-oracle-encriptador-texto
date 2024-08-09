@@ -79,9 +79,6 @@ Las contribuciones son bienvenidas. Si tienes alguna idea para mejorar el proyec
 - Sube los cambios a tu rama (git push origin feature/nueva-funcionalidad).
 - Abre un pull request.
 
-## Licencia
-Este proyecto está licenciado bajo la Licencia MIT.
-
 ## Autor
 Wendy Maritza Cuy Salcedo - GitHub
 

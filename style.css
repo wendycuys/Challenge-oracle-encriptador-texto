@@ -1,0 +1,243 @@
+/* Estilos generales y de desktop */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    flex: 1; 
+}
+
+.textarea-container,
+.result-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.textarea-container {
+    margin-right: 40px;
+    background: none;
+}
+
+.result-container {
+    margin-left: 80px;
+    position: relative;
+    padding: 40px;
+    background: white;
+    border: none;
+}
+
+.result-container.no-text {
+    background: white url('img/Muñeco.png') no-repeat center center;
+    background-size: 250px auto;
+}
+
+#inputText {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    background: transparent;
+}
+
+#outputText {
+    width: 100%;
+    height: 280px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: darkblue;
+}
+
+#copyText {
+    padding: 15px;
+    font-size: 16px;
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 150px;
+    display: none;
+}
+
+#copyText:hover {
+    background: #b3c6ff;
+}
+
+#informacion {
+    color: grey;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+#encrypt,
+#decrypt {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    background: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 150px;
+}
+
+#decrypt {
+    color: darkblue;
+    background: #D8DFE8;
+}
+
+#encrypt:hover,
+#decrypt:hover {
+    background: #3333cc;
+    color: white;
+}
+
+#no-message {
+    color: grey;
+    font-size: 24px;
+    text-align: center;
+    display: none;
+}
+
+#instruction {
+    color: grey;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: darkblue;
+    padding: 15px;
+    margin-top: auto; 
+}
+
+footer p {
+    color: #D8DFE8;
+    font-size: 15px;
+}
+
+/* Media queries para tablets */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .textarea-container {
+        margin-right: 0;
+    }
+
+    .result-container {
+        margin-left: 0;
+    }
+
+    #inputText,
+    #outputText {
+        height: 200px;
+    }
+}
+
+/* Media queries para celulares */
+@media (max-width: 480px) {
+    header {
+        justify-content: center;
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .textarea-container,
+    .result-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #inputText,
+    #outputText {
+        height: 150px;
+    }
+
+    #no-message {
+        font-size: 20px;
+    }
+
+    #instruction {
+        font-size: 12px;
+    }
+
+    #encrypt,
+    #decrypt,
+    #copyText {
+        width: 100px;
+        font-size: 14px;
+    }
+}
+

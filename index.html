@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/Frame.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="textarea-container">
+            <textarea id="inputText" cols="30" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
+            <div>
+                <h6 id="informacion">&#9888 Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="button-container">
+                <button id="encrypt">Encriptar</button>
+                <button id="decrypt">Desencriptar</button>
+            </div>
+        </section>
+        <section class="result-container">
+            <textarea id="outputText" cols="20" rows="10" readonly></textarea>
+            <button id="copyText" style="display: none;">Copiar</button>
+            <div class="message-container">
+                <h6 id="no-message">Ningún mensaje fue encontrado</h6>
+                <p id="instruction">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wendy Maritza Cuy Salcedo</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
